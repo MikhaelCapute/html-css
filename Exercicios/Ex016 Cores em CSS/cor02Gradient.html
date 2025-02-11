@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente e CSS</title>
+    <style>
+        *{
+            height: 100%;
+        }
+
+        body{
+            /* background-image: linear-gradient(to right, white, blue); /*Podemos colocar quantas cores nos quisermos */
+
+            /*Coloca a imagem no fundo da tela*/background-image: /*Define se é algo reto, circular ou etc*/linear-gradient(/*Diz que a direção do degradê é para baixo*/to bottom, #FFFFFF/*10% diz quanto da tela essa cor terá de tamanhos*/, #aeede8, #7cd9d4, #1c4c52);/*Cores presentes no degradê*/
+
+            background-attachment: fixed; /*Esse código deixa o degrade preso, mesmo quando rolamos a tela o degrade continua, sem isso o degradê corre pela tela toda até o final da página*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+    <!--
+    Podemos também fazer o o degradê da direita para a esquerda:
+    body{
+        background-image: linear-gradient(to left, white, blue);
+    }
+
+    Podemos fazer de baixo para cima, porém temos que adicionar um código a mais, por que o tamanho do degradê está pequeno. para isso precisamos de uma configuração global:
+    <style>
+
+        *{
+           height: 100%; 
+        }
+
+        body{
+            background-image: linear-gradient(to top, white, blue);
+        }
+
+    </style>
+
+    E para fazer para baixo é só modificar o "to top" para "to bottom";
+    -->
+    <a href="cor2_1.html">Segunda Página</a>
+</body>
+</html>

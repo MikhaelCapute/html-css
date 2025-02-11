@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!--<video src="midia/meuVideo2.webm" width="300" autoplay ></video>-->
+    <!--Esse modo de vídeo consome o próprio serviço de hospedagem do site-->
+    <video  controls poster="imagens/tumb.jpg">
+        <source src="midia/meuVideo2.webm" type="video/webm">
+        <source src="midia/meuVideo2.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível com o nosso formato de vídeo.</p>
+        <p><a href="midia/meuVideo2.mp4">Clique aqui</a> para fazer o download do vídeo.</p>
+    </video>
+
+    <!--Essa forma consome serviço do youtube ou de outra plataforma de vídeos -->
+    <h1>Inserindo Vídeos Do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mdnF9R-Bzpg?si=fpo2TsscR04lnV2J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p></p>
+    
+    <h1>Inserindo Vídeos Do Odysee</h1>
+    <iframe id="odysee-iframe" style="width: 29.5%; aspect-ratio:16 / 9;" src="https://odysee.com/$/embed/@StartGamePlay001:2/mercedes-gtr-amg-assetto-corsa-mod:b?r=2bJk1ihfZcuQxhYoquYQ7MU87AMxHdW1" allowfullscreen></iframe>
+
+</body>
+
+</html>

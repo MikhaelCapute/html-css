@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgrey;
+            margin: 0px;
+        }
+        header{
+            /*width: 600px;*/
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(168, 168, 168);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px  rgba(0, 0, 0, 0.469);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav > a:hover{
+            transition-duration: 0.3s;
+            text-decoration: underline;
+            margin-right: 40px;
+            margin-left: 20px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 1px;
+        }
+
+        
+        #assuntos > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #assuntos > a:hover{
+            transition-duration: 0.3s;
+            text-decoration: underline;
+            margin-right: 40px;
+            margin-left: 40 px;
+        }
+
+        article{
+            background-color: rgb(168, 168, 168);
+            color: white ;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px  rgba(0, 0, 0, 0.469);
+
+        }
+        article > aside{
+            background-color:rgb(49, 49, 49);
+        }
+
+        aside > p{
+            text-align: right;
+            padding-right: 30px;
+
+        }
+
+        footer{
+            background-color: rgb(50, 50, 50);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 20px;
+            background-color: rgb(0, 0, 0);
+        }
+        div > #olo{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: white;
+            margin: 100px;
+        }
+       
+
+    </style>
+</head>
+<body>
+
+    <header> <!--Cabeçalho-->
+        <h1>Meu Site</h1>
+
+        <nav> <!--Navegação ou Menu-->
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+
+    </header>
+
+    <main> <!--Conteúdo principal-->
+       <section id="assuntos"> <!--Sessões dentro do conteúdo principal -->
+            <h2>Assuntos</h2>
+            <a href="#">Esportes</a> <a href="#">Política</a> <a href="#">Tecnologia</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident repellat est molestias perspiciatis, nemo officiis possimus! Quam dolorem, beatae, cumque est at, consectetur laboriosam ipsum provident sint corrupti facere.</p>
+       </section>
+
+       <section id="noticias">
+
+            <article>
+
+                <h2>Notícia sobre o Brasil</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eius inventore cupiditate voluptatibus qui impedit id ipsa molestiae sint, dolorem, tempore nulla quidem accusamus ullam a? Nisi beatae necessitatibus quisquam.l Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium, debitis consequuntur a temporibus voluptas? Ipsa adipisci cum omnis ad ab ea. Asperiores, quasi praesentium! Incidunt expedita asperiores quisquam omnis!</p>
+
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+
+       </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Mikhael Capute</p>
+    </footer>
+
+    <div id="bola">
+        <div id="olo">
+
+        </div>
+    </div>
+
+    <!--Se fores ver o site não existe nenhuma formatação em relação a estilos, eé continua visivelmente um conteúdo, porém essa semantica no conteúdo utilizando as caixas, ajuda os motores de busca a acharem o seu site de melhor forma, pois você está fazendo um site semantico, com sentido.-->
+</body>
+</html>

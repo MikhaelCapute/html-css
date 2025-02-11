@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap'); /*fonte das letras normais*/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap'); /*Fonte h2 assunto*/
+
+@font-face {
+    font-family: 'aston';
+    src: url('Fontes/Aston Script.ttf');
+}
+  
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(-45deg, #a69485, #595959);
+}
+main{
+    background-color: #F2E5D5;
+    padding: 10px;
+    width: 800px;
+    height: 920px;
+    margin:auto;
+    box-shadow: 10px 10px 10px 10px #3d3a36c4;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'aston';
+    color: black;
+    text-align: center;
+}
+
+h2{
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 22px;
+}
+
+p{
+    font-family: "Ms Madi";
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    font-size: 2em;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*As configurações abaixo faz com que o conteúdo se adapte a todas as telas, de celular, TV, tablet, desktop e etc.*/
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img{ /*Isso faz com que a imagem diminua conforme o tamanho dos dispositivos*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni suscipit architecto porro ea molestias modi sed voluptatem placeat sint, fugit laborum ipsam esse fugiat, incidunt ipsum, perspiciatis recusandae expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi nesciunt, rem corrupti, vero perspiciatis unde sed labore commodi assumenda id odit eligendi. Eum doloremque facilis maiores et aperiam distinctio natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero magni illo, nobis similique corporis recusandae eligendi amet! Neque incidunt maiores dolores, odio ipsum, laudantium id soluta magnam numquam, perspiciatis dignissimos.</p> <!--Os dois são modelos de blocos e blocos por padrão ocupam 100%% da tela-->
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="" type="images/irina-blok-pq.jpg">
+            <img src="images/irina-blok.jpg" alt="">
+        </picture> <!--Foto que não é adaptável-->
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni suscipit architecto porro ea molestias modi sed voluptatem placeat sint, fugit laborum ipsam esse fugiat, incidunt ipsum, perspiciatis recusandae expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi nesciunt, rem corrupti, vero perspiciatis unde sed labore commodi assumenda id odit eligendi. Eum doloremque facilis maiores et aperiam distinctio natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero magni illo, nobis similique corporis recusandae eligendi amet! Neque incidunt maiores dolores, odio ipsum, laudantium id soluta magnam numquam, perspiciatis dignissimos.</p>
+    </main>
+</body>
+</html>

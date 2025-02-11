@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente diminua o tamanho da janela do seu navegador.</p>
+
+    <picture>
+        <!-- A sequencia que é colocada deve ser uma ordem no menor para o maior ou do maior para o menor, percebe-se que colocamos no source. primeiro o menor depois o médio e por fim de condição o navegador utiliza a imagem grande por padrão-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto Grande">
+    </picture>
+
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio</p>
+    <!--
+    <audio src="midia/A Walk Into Space - Topher Mohr and Alex Elena.mp3"controls autoplay loop></audio>
+    -->
+    
+    <!--metadata - serve para o site carregar somente algumas pequenas informações do audio a ser lido, como nome, data, duração e etc.
+    none - não vai carregar nada até que o usuário clique para reproduzir o audio.
+    auto - só terminar de carregar a página quando terminar de carregar o audio.
+    O autoplay - Se autoreproduz sozinho sem a necessidade da intervenção de um usuário.
+    controls - mostra os controles de volume pausa e duração do audio
+    loop - faz um recomeça novamente toda vez que o audio termina-->
+
+    <!--Procure sempre evitar arquvio wav, pois arquivos wav são grandes e pesados demais isso atrapalha o seu site na hora de aparecer para o robô de busca do google, pois consideram o seu site pesado demais.-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não reproduz nenhum dos nossos tipos de audio</p>
+        <p><a href="midia/guanacast-33.mp3">Clique aqui</a> para baixar o audio.</p>
+    </audio>
+
+</body>
+</html>

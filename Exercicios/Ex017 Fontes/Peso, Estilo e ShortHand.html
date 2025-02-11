@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso, Estilo e maozinha em CSS</title>
+    <style>
+
+
+        body{
+            font-family: 'Work Sans' ,Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas:
+            em, ex, rem, vw, vh
+            */
+
+            font-size: 1em;
+            
+            /*
+            font-weight: normal; Peso da fonte
+            Pesos: lighter, normal, bold(negrito), bolder(Extra Negrito)
+            Outra variação é a numérica de 100 à 900
+
+            font-style: italic; Coloca ele como italic
+            text-decoration: underline; Sublinhado
+            */
+
+        }
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /*Condensando essas 4 declarações em uma única declaração
+            
+            ShortHand (mãozinha):
+            1 - font-style
+            2 - font-weight
+            3 - font-size
+            4 - font family 
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif; /*ShortHand onde você pode escrever o que deseja em uma única linha. OBS: não existe shortHand pra tudo, mas existem varios shorthand que você pode utilizar no seu HTML*/
+        }
+        h2{
+            font: bold 2em 'Work Sans'; /* o shortHand precisa que você siga a ordem que foi explicada log acima, primeiro um depois o outro e assim vai. */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando Com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia hic recusandae, quo eligendi possimus id nostrum laboriosam quas eveniet! Incidunt rem provident nihil iste. Exercitationem officiis sed praesentium eum dolore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae maiores possimus culpa libero quae, optio similique tempore minus voluptate rem aspernatur corrupti, placeat nesciunt eligendi cum unde! Voluptate, ratione ex?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis ex fugit nesciunt velit id, numquam quis, dolor animi voluptatibus tenetur officiis itaque esse cum. Voluptatibus corrupti sit corporis sint?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa possimus enim delectus pariatur adipisci suscipit soluta tenetur saepe iure assumenda perspiciatis, sapiente quasi fuga quaerat error vel voluptas. Odit, quisquam.</p>
+
+    <h2>Subtítulo Do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptates quas dolorem eveniet cumque magni modi commodi quae reprehenderit neque harum sit rem possimus, aliquam error dolor blanditiis nemo enim.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error similique magnam dolor enim tenetur sequi minus! Repudiandae voluptatum at delectus voluptatibus quaerat ullam nam, tempore, qui perspiciatis, quae soluta corrupti.</p>
+   
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /*Está tirando todas as decorações envolvendo o text decoration(justify, underline, double, solid e etc)*/
+            font-weight: bold;
+
+
+        }
+
+        a:visited{ /*Caso o site do link já tenha sido visitado ele pintará com a cor darkRed, caso não, continuará com a cor Red*/
+            color: darkred
+        }
+
+        a:hover{ /*Hover é o estado que o link está quando o mouse está em cima*/ 
+            transition-duration: 0.5s;
+            color: black;
+            text-decoration: underline; /*Ao passar o mouse por cima o link passa a ter um sublinhado (Underline) */
+        }
+
+        a:active{ /* caso aperte o link ele mudará a cor para lightYellow*/
+            color: lightyellow
+        }
+
+        a::before{ /*Pseudo elemento que está modificando o conteúdo do HTML, ou seja, no início do conteúdo html o pseudo elemento "::before" irá adicionar um conteúdo a mais*/
+            content: '☾ ';
+        }
+
+        a::after{ /*Pseudo elemento se utiliza "::" */  /*Isso é uma forma de modificar o html utilizando as CSS, onde você tem a liberdade de modificar coisas específicas sem precisar mudar o conteúdo.*/
+            content: ' ☽';
+        }
+
+        .especial{
+            background-color: bisque;
+        }
+        .especial::before{ /*Pseudo elemento que está modificando o conteúdo do HTML, ou seja, no início do conteúdo html o pseudo elemento "::before" irá adicionar um conteúdo a mais*/
+            content: '⮑ ';
+        }
+
+        .especial::after{ /*Pseudo elemento se utiliza "::" */  /*Isso é uma forma de modificar o html utilizando as CSS, onde você tem a liberdade de modificar coisas específicas sem precisar mudar o conteúdo.*/
+            content: ' ⮐';
+        }
+
+        /*
+        
+        # -> ID
+        . -> Classe
+        :: -> Pseudo Elemento
+        : -> Peseudo Classe
+        > -> Children
+
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul type="circle">
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*Box-Level*/
+
+            /*
+            Em um ápice de loucura você pode transformar uma tag padrão box-level em inline-level com o seguinte código:
+            
+            display: inline;
+            
+            */
+
+            background-color: lightgrey;
+
+            height: 194px;
+            width: 300px;
+
+            /*
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgreen;
+            
+            Simplificando com shortHands:*/
+            border: 10px solid darkslategrey;
+
+            /*
+            
+            padding-top: 25px;
+            padding-right: 10px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+            
+            Simplificando com shortHands: */
+            padding: 25px 10px 25px 25px;
+
+            /*
+            
+            Caso queira colocar o conteúdo no meio da tela, utilize o valor "auto":
+            margin: auto;
+
+            margin-top: 25px;
+            margin-right: 10px;
+            margin-bottom: 60px;
+            margin-left: 25px;
+
+            Simplificando com shorthands*/
+            margin: 25px 10px 60px 25px;
+
+
+            /* 
+
+            outline-width: 5px;
+            outline-style: dashed;
+            
+            Simplificando com shorthands*/
+            outline: 5px dashed salmon;
+
+            /*
+            Caso algum elemento tenha o valor exatamente igual em todos os lados, por exemplo: 
+            
+            padding: 10px 10px 10px 10px;
+
+            você pode colocar somente um valor que o navegador já vai entender que é o mesmo valor para todos os lados
+
+            "padding: 10px;" == "padding: 10px 10px 10px 10px;"
+
+            caso o valor seja 
+
+            padding: 10px 20px 10px 20px;
+            
+            você pode simplificar com:
+            padding: 10px(Cima, baixo) 20px(Direito, Esquerdo);
+            
+
+            */
+
+        }
+
+        a{  /*Inline-Level*/
+            border-width: 10px;
+            border-style: groove;
+            border-color: red;
+            padding: 10px;
+
+            /*
+            Em caso e um ápice de loucura você pode colocar uma tag padrão inline em box level também com o seguinte código
+            
+            display: block;
+            
+            */
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Parágrafos também são exemplo de box-level, mas os <a href="#">links</a> são exemplos de caixa inline-level</p>
+</body>
+</html>

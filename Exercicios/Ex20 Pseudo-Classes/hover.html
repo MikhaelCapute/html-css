@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Hover</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p{ /*O parágrafo é filho de uma div, ou seja, ele só vai modificar o parágrado de dentro da tag div*/
+            display: none; /*Aqui eu estou definindo pra que não mostre o parágrado normalmente*/
+        }
+
+        div:hover > p{ /* Aqui através da pseudo-classe eu digo para que quando passe o mouse siga as seguintes instruções: */
+           
+            display: block; /*Mostrar na tela*/
+            color: white; /*Mudar as letras para branco*/
+            background-color: red; /* Mudar o fundo para vermelho */
+            width: 200px;
+        }
+
+        div:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo Hover</h1>
+
+    <p>Passo o mouse em cima do texto para para ver o parágrafo escodido</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+</body>
+</html>
