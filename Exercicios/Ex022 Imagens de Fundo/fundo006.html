@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho da imagem no fundo</title>
+    <style>
+        body{
+            height: 100vh;
+            /*background-color: black;
+            background-image: url(images/wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            */
+           
+            
+            /*
+            o auto é o tamanho padrão do backg.Size
+            contain: a imagem é redimensionada para caber dentro do elemento, mantendo a proporção original, ou seja, 100% exibida, onde ao remimensionar a imagem, ela cria barras laterais ou superiores e inferiores.
+
+            cover: Ele irá cobrir a tela inteiro mesmo que tenha que picotar a imagem fazendo caber no fundo da tela independente do tamanho da tela e suas dimensoes.
+
+            lembrando que também se pode ser feito manualmente com valores em px ou %, por exemplo: 100% 100% ou 100px 100px, ou seja, o primeiro valor é a largura e o segundo é a altura.
+            
+            nesse caso o background-size: cover; é o mais utilizado, pois ele cobre a tela inteira com a imagem, mesmo que tenha que cortar a imagem para caber na tela, mas ele cobre a tela inteira.
+            */
+
+            /*
+            background-attachment: fixed; Isso faz com que a imagem de fundo fique fixa e ao rolar o contúdo para baixo a imagem de fundo não se move, caso fosse o valor scroll rolaria a imagem repetida.
+            */
+
+            /*Shorthand background: 
+                color > image > position > repeat > [size] > attechment
+                
+                Na documentação dizia que se podia colocar o size, porém ainda não sei se é verdade, pois não funcionou, logo coloquei separado.
+
+                */
+            background: black url(images/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+        }
+        main{
+            background-color: white;
+
+            max-width: 600px; /*Isso é pra quando for aberto em um celular ou o site for espremido até 600px ele começa a se adaptar, muito utilizado para celulares ou tablets também.*/
+
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vero praesentium dolorum temporibus dicta quae quos dolore ipsum ipsam eaque, molestias provident sint suscipit modi dolor ex. Illo, harum sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis molestias expedita dicta ut dolorem magni maiores aspernatur velit, recusandae deleniti nihil quas minima reprehenderit itaque cupiditate quis tempora? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tempore deleniti assumenda praesentium ut, pariatur at nemo, voluptatibus cupiditate eum sapiente quod dolore impedit magnam sit dolorum maiores! Unde, ullam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vero praesentium dolorum temporibus dicta quae quos dolore ipsum ipsam eaque, molestias provident sint suscipit modi dolor ex. Illo, harum sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis molestias expedita dicta ut dolorem magni maiores aspernatur velit, recusandae deleniti nihil quas minima reprehenderit itaque cupiditate quis tempora? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tempore deleniti assumenda praesentium ut, pariatur at nemo, voluptatibus cupiditate eum sapiente quod dolore impedit magnam sit dolorum maiores! Unde, ullam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vero praesentium dolorum temporibus dicta quae quos dolore ipsum ipsam eaque, molestias provident sint suscipit modi dolor ex. Illo, harum sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis molestias expedita dicta ut dolorem magni maiores aspernatur velit, recusandae deleniti nihil quas minima reprehenderit itaque cupiditate quis tempora? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tempore deleniti assumenda praesentium ut, pariatur at nemo, voluptatibus cupiditate eum sapiente quod dolore impedit magnam sit dolorum maiores! Unde, ullam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vero praesentium dolorum temporibus dicta quae quos dolore ipsum ipsam eaque, molestias provident sint suscipit modi dolor ex. Illo, harum sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis molestias expedita dicta ut dolorem magni maiores aspernatur velit, recusandae deleniti nihil quas minima reprehenderit itaque cupiditate quis tempora? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tempore deleniti assumenda praesentium ut, pariatur at nemo, voluptatibus cupiditate eum sapiente quod dolore impedit magnam sit dolorum maiores! Unde, ullam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vero praesentium dolorum temporibus dicta quae quos dolore ipsum ipsam eaque, molestias provident sint suscipit modi dolor ex. Illo, harum sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis molestias expedita dicta ut dolorem magni maiores aspernatur velit, recusandae deleniti nihil quas minima reprehenderit itaque cupiditate quis tempora? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tempore deleniti assumenda praesentium ut, pariatur at nemo, voluptatibus cupiditate eum sapiente quod dolore impedit magnam sit dolorum maiores! Unde, ullam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vero praesentium dolorum temporibus dicta quae quos dolore ipsum ipsam eaque, molestias provident sint suscipit modi dolor ex. Illo, harum sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis molestias expedita dicta ut dolorem magni maiores aspernatur velit, recusandae deleniti nihil quas minima reprehenderit itaque cupiditate quis tempora? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tempore deleniti assumenda praesentium ut, pariatur at nemo, voluptatibus cupiditate eum sapiente quod dolore impedit magnam sit dolorum maiores! Unde, ullam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vero praesentium dolorum temporibus dicta quae quos dolore ipsum ipsam eaque, molestias provident sint suscipit modi dolor ex. Illo, harum sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt veritatis molestias expedita dicta ut dolorem magni maiores aspernatur velit, recusandae deleniti nihil quas minima reprehenderit itaque cupiditate quis tempora? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tempore deleniti assumenda praesentium ut, pariatur at nemo, voluptatibus cupiditate eum sapiente quod dolore impedit magnam sit dolorum maiores! Unde, ullam.</p>
+    </main>
+</body>
+</html>

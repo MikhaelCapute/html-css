@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            position: relative; /*Todo box em html por padrao é relativo estou só sendo explicito*/
+            height: 95vh;
+            background-color: purple;
+            padding: 10px;
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo{
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute; /*O conteudo é absoluto, ou seja, ele não se importa com o container, ele se importa com o body*/
+            /*Ao adicionar o valor absoluto no position pode-se adicionar duas configurações específicas left e top onde se pode por valores em px ou %*/
+            left: 50%;
+            top: 50%;
+            transform: translate(-20px, -20px); /*O translate é uma função que move o elemento, no caso ele move o elemento 20px para a direita e 20px para baixo e caso a ordem dos valores forem negativos é no sentido ao contrario -20px para a esquerda e -20px para cima. Porém agora iremos usar porcentagem para casae certinho com o meio do conteudo com o do container*/
+            transform: translate(-50%, -50%); /*Agora o conteudo está centralizado no container*/
+
+
+            /*Contudo, para centrallizar um conteúdo é necessario que a div de "fundo" esteja em posição relativa e o conteúdo esteja em posição absoluta para que na div de conteúdo possamos abrir o leck de possibilidades top e left para assim configurarmos com os valores de 50% nos dois, sendo assim o primeiro pixel do canto superior esquerdo se centralizará com a div container, e então pode-se utilizar o transform: translate(-50%, -50%) para que possamos centralizar a o conteúdo dentro do container 
+            meio que retroceder, para podermos centralizar as duas divs exatamente iguais*/
+            
+
+           
+
+           
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
