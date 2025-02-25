@@ -1,3 +1,50 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /*Passion One*/
+
+body{
+
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header h1{
+    font-family: 'Passion One', serif;
+    font-weight: bold;
+    font-size: 12em;
+    
+}
+
+header > h1:hover{
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+header h1:not(:hover){
+    transition-duration: 1s;
+}
+
+header p{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+header a{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+main{
+
+}
+footer{
+    background-color: black;
+    color: white;
+}
