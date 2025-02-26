@@ -2,32 +2,39 @@
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /*Passion One*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); /*Sriracha*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
-
+    background-color: white;
 }
 
 header{
-    margin: 0;
-    padding: 0;
+    text-align: center;
     background-color: black;
     color: white;
+    padding: 70px;
 }
 
 header h1{
     font-family: 'Passion One', serif;
     font-weight: bold;
-    font-size: 12em;
+    font-size: 8em
     
 }
 
 header > h1:hover{
-    transition-duration: 1s;
     text-decoration: underline;
+    transition-duration: 2s;
 }
 
 header h1:not(:hover){
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
 
 header p{
@@ -44,7 +51,55 @@ header a{
 main{
 
 }
+
+article p{
+    font-size: 53px;
+    font-family: 'Sriracha', cursive;
+    margin: 80px 40px;
+}
+
+aside > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.362);
+    width: 700px;
+    padding: 10px;
+    margin: 20px 40px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#Flor{
+    background-image: url(../images/background001.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#Carta{
+    background-image: url(../images/background002.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 footer{
     background-color: black;
     color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    transition-duration: 0.5s;
 }
