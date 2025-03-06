@@ -1,5 +1,77 @@
 @charset "UTF-8";
 
-body{
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    background-color: darkgrey;
+    min-height: 100vh; /*Tamanho minimo do corpo do meu site será de 100% da minha viewHeight (vw seria para largura, vh é para altura)*/
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top: 50px;
+    text-transform: capitalize; /*Text trasnforma é um parametro onde você muda os formatos das letras, sendo assim nesse caso eu estou colocando o inicio de cada palavra em maiúsculo*/
+
+    font-variant: small-caps; /*Aqui eu estou colocando todas as letras em maiúsculo, a diferença é que eu continuo tendo as letras maiúsculas porém eu consigo aumentar o tamanho das primeiras letras de cada palavra*/
+}
+
+header > p{
+    padding-bottom: 50px; /*Utilizando ficaria 50px para cima no h1 e 50px para baixo no parágrafo, sendo assim deixando o header simetrico*/
+}
+
+a{
+    color: white;
+    text-decoration: none; /*Aqui eu estou retirando o sublinhado do link*/
+    font-weight: bolder;
+}
+
+a:hover, footer > a:hover{ 
+    /*Não precisaria fazer isso pois só temos dois links no nosso projeto, logo o a:hover já bastaria, porém fica aqui de exemplo caso tenhamos um projeto com links no conteúdo, estamos filtrando estas configurações somente para os dois box's.*/
+    
+    text-decoration: underline; /*Aqui eu estou colocando o sublinhado no link quando eu passar o mouse por cima*/
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /*Colocando 10 por cento de viewheight na tela para conseguir fazer o efeito paralax*/
+
+    line-height: 2em; /*Espaçamento de uma linha para outro dentro de um parágrafo*/
+    padding-left: 30px; /*Padding para distanciar os parágrafos da borda a esquerda*/
+}
+
+section.normal{
     background-color: white;
+    color: black;
+}
+
+section.image{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.image > p{
+    background-color: rgba(0, 0, 0, 0.199);
+    width: 400px;
+    padding: 5px;
+
+    /*No parágrado dentro da imagem eu defini um background black com uma transparencia minima, defini o tamanho dela em largura e coloquei o padding pra não ficar grudados nas bordas da caixa*/
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
