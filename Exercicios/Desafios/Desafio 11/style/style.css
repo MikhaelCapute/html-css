@@ -37,7 +37,7 @@ header > h1{
     font-size: 4em; /*Posso utilizar assim porém se eu diminuir a tela para o tamanho de um celular, o tamanho do h1 não se adapta, logo terei  que usar o vw*/
     font-size: 10vw; /*Não é a melhor maneira porém quebra um galho, a melhor maneira seria utilizando media queries, mas ainda não aprendemos e vamos aprender lá na frente.*/
 
-    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.433);
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.335);
 }
 
 header > p{
@@ -55,7 +55,7 @@ a:hover, footer > a:hover{
     /*Não precisaria fazer isso pois só temos dois links no nosso projeto, logo o a:hover já bastaria, porém fica aqui de exemplo caso tenhamos um projeto com links no conteúdo, estamos filtrando estas configurações somente para os dois box's.*/
     
     text-decoration: underline; /*Aqui eu estou colocando o sublinhado no link quando eu passar o mouse por cima*/
-    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.488);
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.425);
     transition-duration: 0.5s;
 }
 
@@ -79,7 +79,7 @@ section.image{
     background-color: rgb(51, 51, 51);
     color: white;
 
-    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.428); /*Colocando a sombra na parte de dentro da imagem para destacar que é uma imagem de FUNDO*/
+    box-shadow: inset 20px 20px 33px rgba(0, 0, 0, 0.509); /*Colocando a sombra na parte de dentro da imagem para destacar que é uma imagem de FUNDO*/
 
     background-size: cover; /*Colocando para se ajustar automaticamente na melhor posição da imagem*/
     background-attachment: fixed; /*Isso faz o efeito paralax*/
@@ -88,6 +88,7 @@ section.image{
 section.image > p{
     background-color: rgba(0, 0, 0, 0.504);
     text-shadow: 1px 1px 0px black; /*Text shadow para poder visualizar melhor*/
+    text-align: justify;
     display: inline-block;
     padding: 50px;
 
