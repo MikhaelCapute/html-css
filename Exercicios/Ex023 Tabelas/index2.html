@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
+        }
+        h1{
+            margin: 150px;
+            font-size: 3em;
+            font-family: serif;
+            font-variant: small-caps    ;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border: 7px groove black; /*Borda da tabela*/
+            border-collapse: separate; /* NEW !!!! Já vem por padrão quando inserimos o table no html, basicamente separa as células na tabela*/
+            border-collapse: collapse; /* NEW !!!! Colocando as bordas juntas*/ 
+            margin: auto;
+        }
+
+        td{
+            border: 1px solid black; /*Colocando borda em cada elemento*/
+            padding: 8px; /*Padding para distanciar da borda*/
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: top; /*Top middle bottom por padrão ele é middle*/
+        }
+
+        .num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <!-- 
+        Hierarquia de tabelas simples:
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dado de tabela
+    -->
+
+    <table> 
+        <tr> <!--Primeira linha-->
+            <td> <!--Primeiro dado-->
+                A1
+            </td>
+
+            <td> <!--Segundo dado-->
+                B1
+            </td>
+
+            <td> <!--Terceiro dado-->
+                C1
+            </td>
+        </tr>
+
+        <tr> <!--Segunda Linha-->
+            <td>  <!--Primeiro dado-->
+                A2
+            </td>
+
+            <td >  <!--Segundo dado-->
+                B2
+            </td>
+
+            <td class="num">  <!--Terceiro dado-->
+                150
+            </td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="num">300</td>
+        </tr>
+
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+    <p>Tudo que for número colocaremos na direita. <br> 
+        Também colocaremos o conteúdo no topo de suas caixas
+    </p>
+</body>
+</html>

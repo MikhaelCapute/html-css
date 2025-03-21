@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgb(62, 62, 62);
+            text-align: center;
+            
+        }
+        h1{
+            margin: 150px;
+            font-size: 3em;
+            font-family: serif;
+            font-variant: small-caps    ;
+        }
+
+        table{
+            width: 400px;
+            border: 7px groove lightyellow; /*Borda da tabela*/
+            border-collapse: separate; /* NEW !!!! Já vem por padrão quando inserimos o table no html, basicamente separa as células na tabela*/
+            border-collapse: collapse; /* NEW !!!! Colocando as bordas juntas*/ 
+            margin: auto;
+        }
+
+        tr.linha{
+            background-color: grey; /*Cor de fundo da linha*/
+            
+        }
+
+        td.dado{
+            background-color: lightgreen; /*Cor de fundo do dado*/
+            color: black;
+        }
+
+        td{
+            border: 1px solid black; /*Colocando borda em cada elemento*/
+            padding: 8px; /*Padding para distanciar da borda*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <!-- 
+        Hierarquia de tabelas simples:
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dado de tabela
+    -->
+
+    <table> 
+        <tr> <!--Primeira linha-->
+            <td class="dado"> <!--Primeiro dado-->
+                A1
+            </td>
+
+            <td> <!--Segundo dado-->
+                B1
+            </td>
+
+            <td class="dado"> <!--Terceiro dado-->
+                C1
+            </td>
+        </tr>
+
+        <tr class="linha"> <!--Segunda Linha-->
+            <td>  <!--Primeiro dado-->
+                A2
+            </td>
+
+            <td class="dado">  <!--Segundo dado-->
+                B2
+            </td>
+
+            <td>  <!--Terceiro dado-->
+                C2
+            </td>
+        </tr>
+
+        <tr>
+            <td class="dado">A3</td>
+            <td>B3</td>
+            <td class="dado">C3</td>
+        </tr>
+
+        <tr class="linha">
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
