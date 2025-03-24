@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th{
+            background-color: lightgray;
+        }
+
+        col.cnome{ /*Quando criamos um grupo de colunas é mais facil fazer uma modificação geral em todas as linhas abaixo da coluna, nesse caso eu coloquei todos os dados da coluna em verde claro.*/
+            background-color: rgba(144, 238, 144, 0.653);
+        }
+
+    </style>
+
+</head>
+<body>
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo_idade" span="2"> <!-- <col class="cIdade"> o span inclui a coluna de idade -->
+            <!-- <col class="cIdade"> -->
+            <col class="cprof">
+        </colgroup> <!--Lembrando que isso só funciona caso você coloque o scope de col na coluna desejada, isso não funcionaria para linha pq na modificação de linhas é mais fácil, qualquer configuração as linhas irão mudar por completo-->
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Carlos Silva</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Advogado</td>
+            </tr>
+
+            <tr>
+                <td>João Pereira</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Vendedor</td>
+            </tr>
+
+            <tr>
+                <td>Maria Oliveira</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Engenheira</td>
+            </tr>
+
+            <tr>
+                <td>Paulo Santos</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Programador</td>
+            </tr>
+
+            <tr>
+                <td>Rita Souza</td>
+                <td>F</td>
+                <td>29</td>
+                <td>Arquiteta</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
