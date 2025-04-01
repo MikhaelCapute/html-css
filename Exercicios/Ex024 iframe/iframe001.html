@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style> /*CSS é sempre soberano, ele sempre vai ser prioridade de configuração para o navegador*/
+        iframe{
+            /*O tamanho padrão do iframe é: 300x150 px*/
+            width: 500px;
+            height: 500px;
+            border: 1px groove black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um Iframe</h1>
+
+    <p>Acessando o site do
+        
+        <iframe src="https://www.cursoemvideo.com" scrolling="no"> <!--Fazendo isso ele vai carregar o site principal do curso em video-->
+
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a> <!--Caso a página não seja encontrada o html irá substituir a imagem de erro padrão do navegador-->
+
+        </iframe>
+        
+        para aprender a programar
+    </p>
+
+    <!--scrolling: auto(Deixa nas mão do navegador geralmente considerando YES), yes, no
+    yes: Faz com que o iframe tenha barra de scroll
+    no: Não deixa a barra de scroll e o site fica fixo na tela principal.
+
+    Frameborder é se vai ter borda ou não as opções são binárias, ou seja, 0 e 1. porém pode ser 0 e qualquer outro número positivo
+    
+    -->
+
+    <p>
+        O site do 
+
+        <iframe src="https://www.google.com.br" frameborder="0">
+
+            <a href="https://www.google.com.br">Google</a> <!--Caso site não seja encontrado ou não seja permitido usar no modo iframe o navegador automaticamente irá substituir o iframe pelo link-->
+
+
+        </iframe> 
+        
+        também é muito legal. pena que não funciona dentro do iframe
+
+           
+    </p> <!--Existem alguns sites que optão para que o seu conteúdo não seja usado para sites de terceiros.-->
+
+    <p>
+        Repositório do <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe> também é bem legal
+    </p>
+</body>
+</html>
